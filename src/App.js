@@ -10,7 +10,10 @@ function App() {
     <div className="App">
       {/* <CssLearn06/> */}
       <Header/>
-      <Test/>
+        {/* here we use bootstrap classes */}
+       <div className="container text-danger">
+        hello this is Home page
+       </div>
       <Footer/>
     </div>
   );
