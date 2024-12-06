@@ -10,7 +10,7 @@ function Posts() {
                 <Row>
                     {
                         posts.map((value, index) => (
-                            <Col lg={4} md={3}>
+                            <Col lg={3} md={4}>
                                 <PostsCard value = {value} key={index} />
                             </Col>
                         ))
