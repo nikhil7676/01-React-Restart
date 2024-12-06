@@ -7,6 +7,7 @@ import Test from "./Components/Test.js";
 import Home from "./Home.jsx";
 import PropsDemo from "./Learn JSX/PropsDemo.jsx";
 import ChilderProps from "./Learn JSX/ChilderProps.jsx";
+import Posts from "./Posts.jsx";
 
 function App() {
 
@@ -30,12 +31,14 @@ function App() {
       {/* <Home/> */}
       {/* <PropsDemo companyInfo = {companyInfo} username = "Nikhil Joshi"/> */}
 
+      {/* this is the childer props data / concept
       <ChilderProps>
-        {/* this is the childer props data / concept */}
         <p style={{ marginLeft : "3%" }} >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate, earum aperiam animi consequuntur illo corporis quidem numquam sequi repellendus!
         </p>
-      </ChilderProps>
+      </ChilderProps> */}
+
+      <Posts/>
     </div>
   );
 }
