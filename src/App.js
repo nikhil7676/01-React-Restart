@@ -6,6 +6,7 @@ import Footer from "./Components/Footer.jsx";
 import Test from "./Components/Test.js";
 import Home from "./Home.jsx";
 import PropsDemo from "./Learn JSX/PropsDemo.jsx";
+import ChilderProps from "./Learn JSX/ChilderProps.jsx";
 
 function App() {
 
@@ -27,7 +28,14 @@ function App() {
       <Footer/> */}
 
       {/* <Home/> */}
-      <PropsDemo companyInfo = {companyInfo} username = "Nikhil Joshi"/>
+      {/* <PropsDemo companyInfo = {companyInfo} username = "Nikhil Joshi"/> */}
+
+      <ChilderProps>
+        {/* this is the childer props data / concept */}
+        <p style={{ marginLeft : "3%" }} >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate, earum aperiam animi consequuntur illo corporis quidem numquam sequi repellendus!
+        </p>
+      </ChilderProps>
     </div>
   );
 }
