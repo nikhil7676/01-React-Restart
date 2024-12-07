@@ -9,6 +9,8 @@ import PropsDemo from "./Learn JSX/PropsDemo.jsx";
 import ChilderProps from "./Learn JSX/ChilderProps.jsx";
 import Posts from "./Posts.jsx";
 
+import ToDo from "./self prectice task/ToDo.jsx";
+
 function App() {
 
   //PropDemo component props
@@ -19,6 +21,12 @@ function App() {
 
   return (
     <div className="App">
+      {/* self prectice Components */}
+      <div>
+        <ToDo/>
+      </div>
+
+
       {/* <CssLearn06/> */}
       
       {/* <Header/> */}
@@ -38,7 +46,7 @@ function App() {
         </p>
       </ChilderProps> */}
 
-      <Posts/>
+      {/* <Posts/> */}
     </div>
   );
 }
