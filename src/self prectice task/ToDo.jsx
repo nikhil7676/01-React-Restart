@@ -1,6 +1,7 @@
 // 07-12-2024 make a todo list and perform add task to list and show in to table
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "./css/todo.css"
 
 function ToDo() {
 
@@ -19,34 +20,34 @@ function ToDo() {
     console.log(taskList);
     return (
         <div>
-            <h1> Our ToDo </h1>
+            <h1 style={{ textAlign: 'center' }} > Our ToDo </h1>
             <label htmlFor="" style={{ marginLeft: "10px", fontWeight: "bold" }}>
                 Enter Your task
             </label>
             <input onChange={handleChange} type="text" placeholder='task name' style={{ marginLeft: "10px" }} />
             <button onClick={addTask} style={{ marginLeft: "10px" }} > Add </button>
 
+            {/* <div style={{justifyContent:'center', alignItems:'center', alignContent:'center'}}> */}
             <div>
-                <table border={2} style={{ width:"15%", marginTop: "30px", marginLeft: "10px" }}>
+                <table className='todoTable'>
                     <tr>
-                        <th>
+                        <td style={{fontWeight:"bold"}}>
                             No
-                        </th>
-                        <th >
+                        </td>
+                        <td style={{fontWeight:"bold"}}>
                             Tasks
-                        </th>
+                        </td>
                     </tr>
 
                     {/* show task in table row */}
                     {
                         taskList.map((value, index) => (
-                            <tr>
-                                <td> {index+1} </td>
-                                <td> {value} </td>
+                            <tr key={index} >
+                                <td > {index + 1} </td>
+                                <td > {value} </td>
                             </tr>
                         ))
                     }
-
                 </table>
             </div>
         </div>

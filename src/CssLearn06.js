@@ -1,5 +1,5 @@
 import React from 'react'
-import "./css/06.css"
+// import "./css/06.css"
 
 function CssLearn06() {
 

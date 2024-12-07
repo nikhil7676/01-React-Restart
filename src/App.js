@@ -10,6 +10,7 @@ import ChilderProps from "./Learn JSX/ChilderProps.jsx";
 import Posts from "./Posts.jsx";
 
 import ToDo from "./self prectice task/ToDo.jsx";
+import Counter from "./self prectice task/Counter.jsx";
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
     <div className="App">
       {/* self prectice Components */}
       <div>
-        <ToDo/>
+        {/* <ToDo/> */}
+        <Counter/>
       </div>
 
 
